@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  gap: 40px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  flex: 1;
+  align-items: center;
+  gap: 80px;
+  padding: 48px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.card-box {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 100%;
+}
+
+.double-box {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.supervisor-box,
+.team-box,
+.karma-box,
+.calculator-box {
+  box-shadow: 0px 13px 21px 2px rgba(41, 100, 255, 0.08);
+  display: flex;
+  border: solid 0.5px hsla(0, 0%, 83%, 0.254);
+  flex-direction: column;
+  height: 350px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 350px;
+  justify-content: space-between;
+  padding: 48px;
+}
+
+.supervisor-box {
+  border-top: 6px solid hsl(180, 62%, 55%);
+}
+.team-box {
+  border-top: 6px solid hsl(0, 78%, 62%);
+}
+.karma-box {
+  border-top: 6px solid hsl(34, 97%, 64%);
+}
+.calculator-box {
+  border-top: 6px solid hsl(212, 86%, 64%);
+}
+
+.loupe-icone,
+.house-icone,
+.light-icone,
+.computer-icone {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.text-box {
+  gap: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  color: hsl(0, 0%, 69%);
+  font-weight: 200;
+  font-size: clamp(0.9rem, 1vw, 1.2rem);
+}
+
+h1 {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+  font-size: clamp(1.8rem, 5vw, 3rem);
+}
+
+h2 {
+  font-weight: 600;
+  font-size: clamp(1.3rem, 4vw, 1.6rem);
+  color: hsl(234, 12%, 34%);
+}
+
+.title-first-line {
+  color: hsla(234, 12%, 34%, 0.827);
+  font-weight: 200;
+}
+
+.headline p {
+  max-width: 55%;
+  font-size: clamp(0.9rem, 1vw, 1.5rem);
+}
+
+@media screen and (max-width: 1692px) {
+  .double-box {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1128px) {
+  .double-box {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 898px) {
+  .headline p {
+    max-width: 80%;
+  }
+}
